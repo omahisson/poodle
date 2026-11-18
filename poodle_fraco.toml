@@ -1,0 +1,17 @@
+[poodle]
+source_folders = ["src"]
+skip_mutators = ["AugAssign", "Keyword", "Number", "String", "FuncCall", "DictArray", "Lambda", "Return", "Decorator"]
+
+[poodle.mutator_opts]
+operator_level = "std"
+
+[poodle.runner_opts]
+command_line = "pytest -x --assert=plain -o pythonpath='{PYTHONPATH}' tests/fracos"
+
+[poodle.reporter_opts]
+json_report_found = true
+json_report_not_found = true
+
+[poodle.reporter_opts.html]
+include_found_trials_on_index = true
+include_found_trials_with_source = true

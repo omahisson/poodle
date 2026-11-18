@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.poodle/
+relatorio_fraco/
+relatorio_forte/
+relatorio_fraco.json
+relatorio_forte.json
